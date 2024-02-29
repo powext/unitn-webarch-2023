@@ -1,0 +1,23 @@
+<app-toolbar title="member details"></app-toolbar>
+<div class="container" *ngIf="member">
+  <h2>Member {{member.PersonID}}</h2>
+  <img
+    mat-card-image
+    src="{{member.PhotoURL}}"
+    alt="Photo of {{member.PreferredName}}"
+    [routerLink]="['/member', member.PersonID]"
+  >
+  <p class="title">{{member.ParliamentaryName}}</p>
+  <p class="subtitle">{{getBirthDate()}}</p>
+  <hr />
+  <h3>Parties</h3>
+  <li *ngFor="let membership of memberships">
+    {{
+      membership.party.ActualName +" | from "+getFormattedDate(membership.ValidFromDate)
+      +(membership.ValidUntilDate ? " to "+getFormattedDate(membership.ValidUntilDate) : "")
+    }}
+  </li>
+  <hr />
+  <h3>Websites</h3>
+  <li *ngFor="let website of websites"><a href="{{website.WebURL}}">{{website.WebURL}}</a></li>
+</div>

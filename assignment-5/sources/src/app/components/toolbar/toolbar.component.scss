@@ -1,0 +1,27 @@
+.toolbar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+
+    span {
+      min-height: 64px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    mat-icon {
+       margin: 0 10px 0 0;
+    }
+  }
+}
+.logo {
+  height: 60px;
+}

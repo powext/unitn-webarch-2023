@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="WildflyDemo:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>WildflyDemo</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="WildflyDemo-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="WildflyDemo:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,15 @@
+<app-toolbar title="list of members"></app-toolbar>
+<div class="members-list">
+  <mat-card *ngFor="let member of members" mat-ripple>
+    <img
+      mat-card-image
+      src="{{member.PhotoURL}}"
+      alt="Photo of {{member.PreferredName}}"
+      [routerLink]="['/member', member.PersonID]"
+    >
+    <mat-card-content
+      [routerLink]="['/member', member.PersonID]">
+      {{member.ParliamentaryName}}
+    </mat-card-content>
+  </mat-card>
+</div>
