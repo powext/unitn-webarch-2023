@@ -22,7 +22,7 @@ Technologies and course syllabus:
 - JSON
 
 Reports:
-- [Report 1](assignment-1/)
+- [Report 1](assignment-1/WEBA_Report_Assignment1_Simone_Bianchin.pdf)
 - [Report 2](assignment-2/WEBA_Report_Assignment2_Simone_Bianchin.pdf)
 - [Report 3](assignment-3/WEBA___Assignment_3.pdf)
 - [Report 4](assignment-4/WEBA___Assignment_4_SimoneBianchin.pdf)
